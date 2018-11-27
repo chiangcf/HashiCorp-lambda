@@ -4,6 +4,7 @@ from chalicelib.controller import vault_controller
 
 app = Chalice(app_name='HashiCorp-lambda')
 
+
 @app.route('/vault', methods=['POST'])
 def hashi_vault():
     request = app.current_request
